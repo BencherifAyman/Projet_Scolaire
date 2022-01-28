@@ -1,0 +1,289 @@
+ 
+
+@font-face {
+ font-family: "Open Sans";
+ src: url("latothinwebfont.woff");
+}
+body,html
+{
+
+
+	background-image : url("fond.jpg");
+	background-size: cover;
+	margin: :auto;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family:calibri
+
+}
+
+nav.menu-nav ul li.listes {
+	list-style-type: none;
+	display: inline-block; 
+	padding-left: 15px;
+}
+
+
+div#content div.centerbox{
+     vertical-align: top;
+     margin-right: 30px;
+     font-size: 25px;
+     margin-left: 35px;
+     color:orange;
+     opacity:0.85;
+     background-color: #ecc1f2;
+     
+}
+
+nav.menu-nav ul li.listes a{
+	color: red;
+	text-decoration: none;
+	background-color: #dcc0e0; 
+	padding: 5px;
+	font-size: 25px;
+	opacity: 0.99;
+}
+
+nav.menu-nav ul li.listes:hover a{
+	color: blue;
+	background-color:#ecc1f2;
+	transition: 1.0s;
+}
+
+div#content div{
+	display: inline-block;
+	width:43%;
+
+
+}
+
+div#content div{
+	display: inline-block;
+	width: auto;
+}
+
+div#content div.leftbox{
+     vertical-align: top;
+     margin-right: auto;
+     font-size: auto;
+     margin-left: auto;
+     color:#9c01b2;
+     opacity:0.9;
+     background-color: #b3b3ff;
+     width: auto;
+     
+}
+
+.float {
+  float: left;
+  width: 25%;
+  margin: 1em 0;
+}
+p,h1,h2 {
+  margin: 1em;
+}
+div#content div.leftboxe{
+     vertical-align: top;
+     margin-right: auto;
+     font-size: auto;
+     margin-left: auto;
+     color:#9c01b2;
+     opacity:0.9;
+     background-color: #E6E6FA;
+     
+}
+
+div#content div.step{
+	width:auto;
+	margin-left: auto;
+
+}
+
+
+
+
+
+
+footer{
+	color:white;
+	background-color: black;
+	font-size: 18px
+
+	}
+
+
+nav.menu-nav nav.menu-déroulant{
+	font-family: Calibri, serif;
+}
+
+nav.menu-nav nav.menu-déroulant > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav.menu-nav nav.menu-déroulant > ul > li {
+	float: left;
+}
+
+nav.menu-nav nav.menu-déroulant li{
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+}
+
+nav.menu-nav nav.menu-déroulant li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 10px;
+	z-index: 100000;
+}
+
+nav.menu-nav nav.menu-déroulant{
+	width: 100%;
+	background-color: #9999ff; 
+}
+
+nav.menu-nav nav.menu-déroulant > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav.menu-nav nav.menu-déroulant > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav.menu-nav nav.menu-déroulant a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav.menu-nav nav.menu-déroulant > ul > li > a{
+	padding: 5% 67px;
+	color: #000;
+	font-size: large;
+
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+
+}
+
+.sebmenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #cbab6f;
+	width: 270px;
+}
+
+.menu-déroulant ul > li > a{  
+	color: #000;
+	text-decoration: none;
+	width: 150px;
+	height: 30px;
+	display: block;
+	text-align: center;
+	display: inline-block;
+
+}
+
+.menu-déroulant ul > li > a{
+	padding: 10px 20px 10px 30px;
+}
+
+.menu-déroulant:hover{
+	border-top: 5px solid #b3b3ff;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+.menu-déroulant ul > ul{
+	position: absolute;
+	z-index: 2;
+	top: 49px;
+	visibility: hidden;
+}
+
+
+
+
+.menu-déroulant li:hover{
+	background-color: #FFF; /* l'arrière plan des menus devient blanc quand on passe la souris dessus */
+}
+
+
+.menu-déroulant ul > li > ul > a:hover{
+	color: #FFF; /* les titres des sous menus deviennent blanc quand on passe la souris dessus*/
+	background-color: #000; /* l'arrière plan des sous menus devient noir quand on passe la souris dessus */
+}
+
+
+nav.menu-nav nav.menu-déroulant nav li:hover .submenu2{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left :0px;
+	padding: 0px;
+	z-index: 100000;
+	float: left;
+}
+
+.submenu{
+	background-color: #ccccff;
+}
+
+
+h1{
+	border :2px black ridge;
+}
+
+h2{
+	border:3px
+	border-radius:20px/10px;
+	box-shadow:6px 6px 6px;
+
+}
+h3{
+	border : 1px black dotted;
+	list-style-type: none;
+
+}
+
+h4
+{
+	color: blue;
+	font-size: 20px;
+	background-color: 
+	text-align: left;
+}
+
+
+
+a:visited /* quand on click sa permet de voir qu'on a deja visité le lien*/
+{
+   color: #FF00FF; 
+}
+
+
+
+a{  /* Liens par défaut (non survolés) */
+   text-decoration: none; /*aucune ligne sur les liens*/
+   color: red; /*couleur du lien*/
+}
+
+
+
+ a:hover /*Apparence au survol des liens*/
+ {
+     text-decoration: underline;
+     color:#9c01b2 ;
+ ]
+
+

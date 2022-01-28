@@ -1,0 +1,212 @@
+ 
+
+
+body,html
+{
+
+
+	background-image : url("fond.jpg"); /*Fond d'écran*/
+	background-size: cover; /*Couvre toute la page*/
+	margin: :auto; /*prise de tout l'écran*/
+	background-repeat:no-repeat; /*une image unique en fond d'écran*/
+	background-attachment: fixed; /*L'image reste fixe*/
+	margin: 0;  /*défini l'écart entre plusieurs bordures*/
+    padding: 0; /*défini l'écart entre la bordure et le texte*/
+
+}
+
+
+
+
+nav.menu-nav ul li.listes:hover a{ /*Identification de lien*/
+	color: blue;
+	background-color:#ecc1f2;
+
+}
+
+div#content div{
+	display: inline-block;  
+	width:43%;
+
+
+}
+
+div#content div{
+	display: inline-block;
+	width: auto;
+}
+
+div#content div.leftbox{
+     vertical-align: top;
+     margin-right: auto;
+     font-size: auto;
+     margin-left: auto;
+     color:#9c01b2;
+     opacity:0.9;
+     background-color: #b3b3ff;
+     width: auto;
+     
+}
+
+
+
+.float {
+  float: left; /*permet de retirer un cotenu du flux normal du conteneur*/
+  width: 25%;
+  margin: 1em 0;
+}
+p,h1,h2 {
+  margin: 1em;
+}
+div#content div.leftboxe{
+     vertical-align: top;
+     margin-right: auto;
+     font-size: auto;
+     margin-left: auto;
+     color:#9c01b2;
+     opacity:0.9;
+     background-color: #E6E6FA;
+     
+}
+
+div#content div.step{
+	width:auto;
+	margin-left: auto;
+
+}
+
+
+
+
+
+
+
+nav.menu-déroulant{
+	font-family: Calibri, serif; /*police du menu déroulant*/
+}
+
+nav.menu-déroulant > ul{ /*Permet de fixer le padding et le margin pour éviter un changement du site*/
+	margin: 0px; 
+	padding: 0px;
+}
+
+nav.menu-déroulant > ul > li {
+	float: left; 
+}
+
+nav.menu-déroulant li{
+	list-style-type: none; 
+}
+	
+.submenu{
+	display: none; /*enleve l'affichage du menu déroulant*/
+	background-color: #ccccff;
+}
+
+nav.menu-nav nav.menu-déroulant li:hover .submenu{
+	display: inline-block;  
+	position: absolute; /*position qui permet de former le déroulant*/ 
+	top: 100%; /*pour que le déroulant se place juste en dessous des menus*/
+	left: 0px; /*pour que le déroulant soit aligné au menu*/
+	padding: 10px;
+	z-index: 100000; /*pour que le déroulant s'affiche bien sur les autres contenus*/
+}
+
+nav.menu-nav nav.menu-déroulant{
+	width: 100%; /*largeur*/
+	background-color: #9999ff; 
+}
+
+nav.menu-nav nav.menu-déroulant > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav.menu-nav nav.menu-déroulant > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav.menu-nav nav.menu-déroulant a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav.menu-nav nav.menu-déroulant > ul > li > a{
+	padding: 5% 67px; /*affichage du menu*/
+	color: #000;
+	font-size: large;
+
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC; /*fine bordure entre les liens déroulants*/
+
+}
+
+.menu-déroulant ul > li > a{  
+	color: #000;
+	width: 150px; /*largeur d'un élément*/
+	height: 30px; /*hauteur de ll'affichage*/
+	display: block;
+	text-align: center; /*aligne le menu*/
+	display: inline-block;
+
+}
+
+.menu-déroulant ul > li > a{
+	padding: 10px 20px 10px 30px;
+}
+
+.menu-déroulant:hover{
+	border-top: 5px solid #b3b3ff;
+	background-color: #e44d26;
+}
+
+
+.menu-déroulant li:hover{
+	background-color: #FFF; /* l'arrière plan des menus devient blanc quand on passe la souris dessus */
+}
+
+
+.menu-déroulant ul > li > ul > a:hover{
+	color: #FFF; /* les titres des sous menus deviennent blanc quand on passe la souris dessus*/
+	background-color: #000; /* l'arrière plan des sous menus devient noir quand on passe la souris dessus */
+}
+
+
+h1{
+	border :2px black ridge;
+}
+
+
+h3{
+	border : 1px black dotted; /*type de bordure*/
+	list-style-type: none;
+
+}
+
+
+
+a:visited /* quand on click sa permet de voir qu'on a deja visité le lien*/
+{
+   color: #FF00FF;  
+}
+
+
+
+a{  /* Liens par défaut (non survolés) */
+   text-decoration: none; /*aucune ligne sur les liens*/
+   color: red; /*couleur du lien*/
+}
+
+
+
+ a:hover /*Apparence au survol des liens*/
+ {
+     text-decoration: underline;
+     color:#9c01b2 ;
+ ]
+
+

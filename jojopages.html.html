@@ -1,0 +1,117 @@
+<!--<?php
+session_start();
+
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', '');
+
+if(isset($_POST['formconnexion'])) {
+   $mailconnect = htmlspecialchars($_POST['mailconnect']);
+   $mdpconnect = sha1($_POST['mdpconnect']);
+   if(!empty($mailconnect) AND !empty($mdpconnect)) {
+      $requser = $bdd->prepare("SELECT * FROM membres WHERE mail = ? AND motdepasse = ?");
+      $requser->execute(array($mailconnect, $mdpconnect));
+      $userexist = $requser->rowCount();
+      if($userexist == 1) {
+         $userinfo = $requser->fetch();
+         $_SESSION['id'] = $userinfo['id'];
+         $_SESSION['pseudo'] = $userinfo['pseudo'];
+         $_SESSION['mail'] = $userinfo['mail'];
+         header("Location: profil.php?id=".$_SESSION['id']);
+      } else {
+         $erreur = "Mauvais mail ou mot de passe !";
+      }
+   } else {
+      $erreur = "Tous les champs doivent être complétés !";
+   }
+}
+?>
+
+  -->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+      <link rel="stylesheet" href="styles.css" />
+        <title>Jojo's bizarre Adventure</title>
+  </head>
+
+<body>    
+  <center>
+    <nav class="menu-nav">
+      <nav class="menu-déroulant">
+          <ul> 
+              <li class="menu-déroulant"><a href="index.html">Accueil</a> 
+
+              </li>
+              <li class="menu-déroulant"><a href="index.html">Mangas</a>
+                  <ul class="submenu">
+                    <li><a href="hxh.html">HunterxHunter</a></li>
+                      
+                  </ul>
+              </li>
+              <li class="menu-déroulant"><a href="index.html">Articles</a>
+                  <ul class="submenu">
+                     <li><a href="#">Article 1</a></li>
+                     <li><a href="#">Article 1</a></li>
+                  </ul>
+              </li>
+              <li class="menu-déroulant"><a href="index.html">Jeux</a>
+                  <ul class="submenu">
+                      <li><a href="#">Article 1</a></li>
+                      <li><a href="#">Article 1</a></li>
+                  </ul>
+               </li>
+              <li class="menu-déroulant"><a href="index.html">Connexion</a>
+                <ul class="submenu">
+                  <div id="content">
+
+
+    <div class="leftboxe">
+    
+    <div class="step">
+      
+      <ul>
+        
+        
+
+        <center> <form method="POST" action="">
+            Mail: <br/><input type="email" name="mailconnect" placeholder="entrez votre mail" /><br/>
+
+
+
+
+
+
+            Mot de passe: <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+            <br /><br />
+            <input type="submit" name="formconnexion" value="Se connecter !" />
+            <form>
+                     <button><a href="inscription.html"> Je m'inscris</a></button>
+                     <center>
+
+                  </td>
+               </tr>
+
+               
+      <!-- <?php
+         if(isset($erreur)) {
+            echo '<font color="red">'.$erreur."</font>";
+         }
+         ?> -->
+      </div>  
+        </li>
+          </ul>
+                  </ul>
+              </li>
+          </ul>
+       </nav>
+     </nav><p>
+<img src="headaccueil.jpg" alt="Photo représentant une image d'anime ainsi qu'une image de gaming"></center><p>
+<center>
+         <div id="content">
+            <div class="leftbox">
+    
+               <div class="step">
+      
+                  <div align="center">
+                    <div class="float">
